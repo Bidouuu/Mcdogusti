@@ -1,0 +1,111 @@
+/* Styles de base */
+html, body, header, footer, nav, ul, li, a, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #f6f6f6;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#login-content, #panier-content {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    margin: auto;
+}
+
+#login-content h2, #panier-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#scan-card, #vider-panier, #Valider {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+#scan-card:hover, #vider-panier:hover, #Valider:hover {
+    background-color: #0056b3;
+}
+
+#panier-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+#panier-list li {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+#panier-list li:last-child {
+    border-bottom: none;
+}
+
+#total {
+    margin-top: 20px;
+    font-weight: bold;
+}
+#heure-passage {
+    font-size: 16px; /* Augmenter la taille de la police */
+    padding: 10px; /* Ajouter un espace autour du texte */
+    border: 1px solid #ccc; /* Ajouter une bordure */
+    border-radius: 5px; /* Ajouter des coins arrondis */
+    background-color: #fff; /* Couleur de fond blanche */
+    width: 150px; /* Largeur de la liste déroulante */
+    margin-bottom: 20px; /* Ajouter un espace en bas de la liste */
+}

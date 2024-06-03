@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation</title>
+    <link rel="stylesheet" href="fin.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="site.html" id="Accueil">Accueil</a></li>
+                <li><a href="panier.html">Panier</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="gif-container">
+            <img src="https://s1.qwant.com/thumbr/0x380/2/5/623099bc593c412e65a67a0662762fcf410365b4c636e2b85e80984c0de11c/GIF_Valider.gif?u=https%3A%2F%2Fwww.trampoline44.net%2FECOMMERCE_TRAMPOLINE44_WEB%2Fext%2FGIF_Valider.gif&q=0&b=1&p=0&a=1.gif" alt="Validation GIF">
+        </section>
+
+        <section class="account-details">
+            <p>Solde du compte : <span id="account-balance">30.55€</span></p>
+            <p>Heure de passage : <span id="passage-time"></span></p>
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="site.html"><button id="Valider">Retour à l'accueil</button></a></li>
+        </ul>
+    </footer>
+
+    <script>
+        window.onload = () => {
+            const heurePassage = localStorage.getItem('heurePassage') || 'Non spécifiée';
+            document.getElementById('passage-time').textContent = heurePassage;
+        };
+    </script>
+</body>
+</html>
